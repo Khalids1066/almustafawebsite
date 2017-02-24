@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+	$("#navbar").sticky({topSpacing:0});
+
     $("#homeBtn").click(function(){
     	$("#aboutDiv").addClass('hidden');
     	$("#galleryDiv").addClass('hidden');
@@ -29,7 +32,7 @@ $(document).ready(function(){
     	$("#homeDiv").addClass('hidden');
     	$("#contactDiv").removeClass('hidden');
     });
-
+    
 });
 
 function initMap() {
