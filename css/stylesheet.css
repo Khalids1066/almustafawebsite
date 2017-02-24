@@ -1,0 +1,50 @@
+body{
+
+}
+
+#aboutDiv, #homeDiv, #galleryDiv, #contactDiv{
+  text-align: center;
+  color: #0c320c;
+}
+#map {
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+  background-color: transparent;
+}
+
+#logo{
+  border-style: solid;
+  margin: auto;
+  margin-top: 5px;
+  margin-left: 3px;
+  margin-bottom: 5px;
+  display:inline-block;
+  color: #0c320c;
+
+}
+.iframe{
+  float: left;
+}
+.fa{
+  color: #0c320c; 
+}
+.navbar{
+  border-color: #0c320c;
+}
+
+.btn{
+  float: right;  
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 3px;
+  display:inline-block;
+  border-color: #0c320c;
+  color: #0c320c;
+  background-color: transparent;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
