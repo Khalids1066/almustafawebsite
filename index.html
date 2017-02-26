@@ -15,14 +15,13 @@
   <!-- My Stylesheet CSS -->
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 
-
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- sticky library -->
   <script src="js/jquery.sticky.js"></script>
+
   <!-- My javaScript file -->
   <script type="text/javascript" src="js/script.js"></script>
-
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -34,79 +33,78 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar navbar-static-top" id="nav">
+  <div class="navbar navbar-fixed-top" id="nav">
+  <div class="container">
+    <a href="#" class="navbar-brand" id="logo">
+      Al-Mustafa
+    </a>
 
-    <nav class="navbar-header">
-    <h1 id="logo">Al-Mustafa</h1>
-    </nav>
-
-    <nav class="navbar-inner" >
-      <button class="btn btn-lg" id="englishBtn">E</button>
-      <button class="btn btn-lg" id="arabicBtn">ع</button>
-      <button class="btn btn-lg" id="contactBtn">Contact</button>
-      <button class="btn btn-lg" id="galleryBtn">Gallery</button>
-      <button class="btn btn-lg" id="aboutBtn">About</button>
-      <button class="btn btn-lg" id="homeBtn">Home</button>
-    </nav>
-
-  </nav>
+    <!-- navbar button when screen becomes certain size -->
+    <button class="navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse"><span class="glyphicon glyphicon-menu-hamburger"></button>
+    <!-- navbar buttons -->
+    <div class="collapse navbar-collapse navHeaderCollapse" >
+      <ol class="nav navbar-nav navbar-right">
+        <li><a class="btn btn-lg active" id="homeBtn">Home</a></li>
+        <li><a class="btn btn-lg" id="aboutBtn">About</a></li>
+        <li><a class="btn btn-lg" id="mediaBtn">Media</a></li>
+        <li><a class="btn btn-lg" id="contactBtn">Contact</a></li>
+        <li><a class="btn btn-lg" id="englishBtn">E</a></li>
+        <li><a class="btn btn-lg" id="arabicBtn">ع</a></li>
+      </ol>
+    </div>
+    </div>
+  </div>
   
-
-
-
   <!-- Home "page" -->
   <div class="container" id="homeDiv">
-    <h4>___________________________________________</h4>
-    <h1 id="homeDivH1">Home</h1>
-    <h4>___________________________________________</h4>
+    <u><h1 id="homeDivH1">Home</h1></u>
     <br>
     <!--Announcments -->
     <div class="announcments">
-      <h4><u>Announcments! </u></h4>
+      <h4>Announcments!</h4>
       <br>
       <h6 class="alert-danger"><span class="fa fa-exclamation fa-1x danger"></span>  The events on the 6th of July has been postponed till 8th of July starting at 7:30pm</h6>
       <h6>The events on the 6th of July has been postponed till 8th of July starting at 7:30pm</h6>
       <h6 class="alert-danger"><span class="fa fa-exclamation fa-1x danger"></span>  The events on the 6th of July has been postponed till 8th of July Quran at 7:30pm</h6>
-      <h6 class="alert-danger"><span class="fa fa-exclamation fa-1x danger"></span>  The events on the 6th of July has been postponed till 8th of July starting at 7:30pm</h6>
+      <h6 class="alert-warning"><span class="fa fa-exclamation fa-1x danger"></span>  The events on the 6th of July has been postponed till 8th of July starting at 7:30pm</h6>
     </div>
-    <div id='calendar'></div>
   </div>
 
   <!-- about "page" -->
    <div class="container hidden"id="aboutDiv">
-    <h4>___________________________________________</h4>
-    <h1 id="aboutDivH1">About</h1>
-      <h4>___________________________________________</h4>
+    <u><h1 id="aboutDivH1">About</h1></u>
       <br>
     <a href="https://www.facebook.com/Al-Mustafa-Charity-Centre-887375017957686/?fref=ts" target="_blank"><span class="fa fa-facebook-square fa-4x" aria-hidden="true"></span></a>
     <a href="https://www.youtube.com/channel/UCSbxZK82WpT6wKx45uB4eTw" target="_blank"><span class="fa fa-youtube-square fa-4x" aria-hidden="true"></span></a>
     <br>
     <br>
       <h4>Address: 3 Drury St, New Lynn, Auckland</h4> 
-      <div id="map">
+      <div id="map" >
       <!--google maps centred on location -->
       </div>
   </div>
 
-  <!-- gallery "page" -->
-   <div class="container hidden" id="galleryDiv">
-    <h4>___________________________________________</h4>
-    <h1 id="galleryDivH1">Gallery</h1>
-    <h4>___________________________________________</h4>
+  <!-- media "page" -->
+   <div class="container hidden" id="mediaDiv">
+    <u><h1 id="mediaDivH1">Media</h1></u>
     <br>
-<iframe src="//embedsocial.com/facebook_album/album_photos/891707227524465" width="900" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <!-- facebook gallery using albumid through embedsocial -->
+    <object id="fbGallery" data="//embedsocial.com/facebook_album/album_photos/891707227524465" marginheight="0" marginwidth="0"></object>
   </div>
 
   <!-- contact "page" -->
    <div class="container hidden" id="contactDiv">
-    <h4>___________________________________________</h4>
-    <h1 id="contactDivH1">Contact</h1>
-    <h4>___________________________________________</h4>
+    <u><h1 id="contactDivH1">Contact</h1></u>
     <br>
     <a href="mailto:almustafa-nz@hotmail.com"><span class="fa fa-envelope fa-4x" aria-hidden="true"></span></a>
   </div>
-
   
+    <!-- footer with scrolling marquee -->
+  <div class="navbar navbar-fixed-bottom" id="footer">
+    <div class="container">
+        <marquee behavior="scroll" direction="left"><h5>Its moving!</h5></marquee>
+    </div>
+  </div>
 
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0JinY93rkBQCgO96WISW2eD1w8xnwAaw&callback=initMap">

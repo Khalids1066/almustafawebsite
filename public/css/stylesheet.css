@@ -1,0 +1,81 @@
+body{
+  background-image: url("http://img09.deviantart.net/5b51/i/2011/162/6/f/imam_abbas_shrine_by_70hassan07-d3im74h.jpg");
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-attachment: fixed;       
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#aboutDiv, #homeDiv, #mediaDiv, #contactDiv{
+  text-align: center;
+  color: #0c320c;
+}
+#map {
+  width: 90% !important;
+  height: 500px !important;
+  display: inline-block;
+  background-color: transparent;
+}
+#fbGallery{
+  width: 90% !important;
+  height: 50vw !important;
+}
+#calender{
+  background-color: red;
+  color: red;
+}
+#logo{
+  border-style: solid;
+  border-width: thin;
+  border-color: #0c320c;
+  color: #0c320c;
+  background-color: transparent;
+
+}
+#nav.shrink {
+  transition: all ease .5s;
+  background: rgba(240,246,232,.9); /* Change background to black on scroll*/
+}
+#footer{
+  color: white;
+  display: inline-block;
+  background-color: rgba(0,0,0,.8);
+}
+#p{
+  display: inline-block;
+}
+
+#nav{
+  color: #0c320c;
+  border-color: #0c320c;
+  background-color: rgba(240,246,232,.9);
+}
+
+.announcments{
+  display: inline-block;
+
+}
+.navbar-right{
+  display: inline-block;
+}
+.fa{
+  color: #0c320c;
+  background-color: transparent;
+}
+.btn{
+  float: right; 
+  border-color: #0c320c;
+  color: #0c320c;
+  opacity: .8;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  display:inline-block;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}

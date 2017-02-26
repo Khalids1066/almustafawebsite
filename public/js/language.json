@@ -1,0 +1,16 @@
+var language = {
+    "english" : {
+        "home" : "Home",
+        "about" : "About",
+        "gallery" : "Gallery"
+        "contact" : "Contact"
+        "almustafa" : "Al-Mustafa"
+    },
+    "arabic" : {
+        "home" : "الصفحة الرئيسية",
+        "about" : "معلوماتنا",
+        "gallery" : "عرض"
+        "contact" : "اتصل"
+        "almustafa" : "مركز المصطفى"
+    }
+}
