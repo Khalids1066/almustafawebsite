@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Al-Mustafa Charity Centre is a New Zealand shia islamic centre that is based in Auckland that provides a number services to the shia muslim community in the greater Auckland region">
 
   <title>Al-Mustafa Charity Centre</title>
 
@@ -24,13 +25,12 @@
   <script type="text/javascript" src="js/script.js"></script>
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 
-<script type="text/javascript">
-
-</script>
 </head>
 
 <body>
+
 
   <!-- navbar -->
   <div class="navbar navbar-fixed-top" id="nav">
@@ -44,7 +44,7 @@
     <!-- navbar buttons -->
     <div class="collapse navbar-collapse navHeaderCollapse" >
       <ol class="nav navbar-nav navbar-right">
-        <li><a class="btn btn-lg active" id="homeBtn">Home</a></li>
+        <li><a class="btn btn-lg" id="homeBtn">Home</a></li>
         <li><a class="btn btn-lg" id="aboutBtn">About</a></li>
         <li><a class="btn btn-lg" id="mediaBtn">Media</a></li>
         <li><a class="btn btn-lg" id="contactBtn">Contact</a></li>
@@ -54,14 +54,17 @@
     </div>
     </div>
   </div>
-  
+
   <!-- Home "page" -->
   <div class="container" id="homeDiv">
     <u><h1 id="homeDivH1">Home</h1></u>
     <br>
+
+    <div data-tockify-component="mini" data-tockify-calendar="khalid.saeed" id="calender"></div>
+  
     <!--Announcments -->
     <div class="announcments">
-      <h4>Announcments!</h4>
+      <h4>Announcments! (?)</h4>
       <br>
       <h6 class="alert-danger"><span class="fa fa-exclamation fa-1x danger"></span>  The events on the 6th of July has been postponed till 8th of July starting at 7:30pm</h6>
       <h6>The events on the 6th of July has been postponed till 8th of July starting at 7:30pm</h6>
@@ -78,6 +81,7 @@
     <a href="https://www.youtube.com/channel/UCSbxZK82WpT6wKx45uB4eTw" target="_blank"><span class="fa fa-youtube-square fa-4x" aria-hidden="true"></span></a>
     <br>
     <br>
+      <h4 id="description">Oportere iracundia ex mea, mea ad vide dolor voluptatibus, cu qui graece impedit ullamcorper. Malorum moderatius vix in, eum ad movet ubique. Impetus facilisi ne sea, sea quis praesent te. An vim lorem recusabo atomorum, ut pro brute delenit necessitatibus. Usu viris laboramus te. Ne fabulas inimicus inciderint mei, eu quaeque percipitur vim.</h4>
       <h4>Address: 3 Drury St, New Lynn, Auckland</h4> 
       <div id="map" >
       <!--google maps centred on location -->
@@ -101,7 +105,7 @@
   
   <div class="navbar navbar-fixed-bottom" id="footer">
     <div class="container">
-        <marquee behavior="scroll" direction="left"><h5>Its moving!</h5></marquee>
+        <marquee id="p" behavior="scroll" direction="left"><h5>Daily quote OR announcemnts (?)</h5></marquee>
     </div>
   </div>
 

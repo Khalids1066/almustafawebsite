@@ -2,12 +2,16 @@
 $(document).ready(function(){
     //making top navbar and footer sticky using library
     $("#nav").sticky({topSpacing:0});
-    $("#footer").sticky({topSpacing:0});
+    $("#footer").sticky({});
 
     //collapses navbar after an option is chosen
     $(".navbar-nav li a").click(function(event) {
         $(".navbar-collapse").collapse('hide');
     });
+
+    /*$.getJSON('language.json', function(json) {
+        console.log(json); // this will show the info it in firebug console
+    });*/
 
 	//translating TODO: Make this more efficient using arrays or JSON files
     $("#arabicBtn").click(function(){
@@ -78,7 +82,9 @@ $(document).ready(function(){
 	    	$('#nav').removeClass('shrink');
 	    }
   	});
+
 });
+
 
 //function that initializes the google maps at the right coordinates
 function initMap() {

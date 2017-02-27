@@ -21,11 +21,11 @@ body{
 }
 #fbGallery{
   width: 90% !important;
-  height: 50vw !important;
+  height: 80vw !important;
 }
 #calender{
-  background-color: red;
-  color: red;
+  background-color: transparent;
+
 }
 #logo{
   border-style: solid;
@@ -53,7 +53,6 @@ body{
   border-color: #0c320c;
   background-color: rgba(240,246,232,.9);
 }
-
 .announcments{
   display: inline-block;
 
