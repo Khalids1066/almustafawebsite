@@ -26,6 +26,8 @@ $(document).ready(function(){
     	$( "#contactBtn" ).text("اتصل");
 
     	$( "#logo" ).text("مركز المصطفى");
+        $( "#announcemntsH" ).text("علانات");
+        $( "#eventsH" ).text("المناسبات القادمة");
 
     });
 
@@ -41,6 +43,8 @@ $(document).ready(function(){
     	$( "#contactBtn" ).text("Contact");
 
     	$( "#logo" ).text("Al-Mustafa");
+        $( "#announcemntsH" ).text("Announcments!");
+        $( "#eventsH" ).text("Upcoming Events");
     });
 
     //hiding and unhiding divs that are being used as "pages", more efficient than routing to other html
