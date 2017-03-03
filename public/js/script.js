@@ -48,7 +48,7 @@ $(document).ready(function(){
     });
 
     //hiding and unhiding divs that are being used as "pages", more efficient than routing to other html
-    $("#homeBtn").click(function(){
+    $("#homeBtn, #logo").click(function(){
     	$("#aboutDiv").addClass('hidden');
     	$("#mediaDiv").addClass('hidden');
     	$("#contactDiv").addClass('hidden');
